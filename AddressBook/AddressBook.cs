@@ -21,7 +21,7 @@ namespace AddressBook
             
             Console.WriteLine("Enter First Name");
             contact.FirstName=Console.ReadLine();
-
+            
             Console.WriteLine("Enter Last Name");
             contact.LastName=Console.ReadLine();
 
@@ -47,9 +47,7 @@ namespace AddressBook
         }
         public void PrintAllContact()
         {
-            foreach (Contact contact in Contacts)
-            {
-                Contact C = Contacts[0];
+                Contact contact = Contacts[0]; 
                 Console.WriteLine("..............................");
                 Console.WriteLine("First Name:" + contact.FirstName);
                 Console.WriteLine("Last Name: " + contact.LastName);
@@ -59,8 +57,6 @@ namespace AddressBook
                 Console.WriteLine("Pin Code:" + contact.ZipCode);
                 Console.WriteLine("Phone Number:" + contact.PhoneNumber);
                 Console.WriteLine("E-Mail ID :" + contact.Email);
-
-            }
         }
     }
 }
